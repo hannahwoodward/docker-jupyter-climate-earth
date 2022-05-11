@@ -17,3 +17,4 @@ dependencies:
   - regionmask=0.8.0
   - urllib3=1.26.8
   - xarray=0.21.1
+  - xesmf=0.6.2
