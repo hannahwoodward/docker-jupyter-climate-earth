@@ -16,7 +16,7 @@ RUN conda env create -f environment.yml --quiet
 RUN source activate climate
 
 # --- Install nbextensions (collapsible headings) ---
-RUN pip install --quiet --no-cache-dir jupyter_contrib_nbextensions && jupyter contrib nbextension install && jupyter nbextension enable collapsible_headings/main
+RUN pip install --quiet --no-cache-dir jupyter_contrib_nbextensions jupyter_nbextensions_configurator && jupyter contrib nbextension install && jupyter nbextension enable collapsible_headings/main
 
 # --- Script to run when starting the Docker image ---
 ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "climate", "jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]
