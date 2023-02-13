@@ -2,10 +2,13 @@ name: climate
 channels:
   - conda-forge
 dependencies:
+  - aiohttp=3.8.3
   - python=3.9.10
   - cartopy=0.20.0
+  - cdsapi=0.5.1
   - cftime=1.5.2
   - dask=2022.2.0
+  - esgf-pyclient=0.3.1
   - jupyter=1.0.0
   - nb_conda=2.2.1
   - nc-time-axis=1.4.0
