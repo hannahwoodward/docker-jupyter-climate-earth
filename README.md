@@ -78,7 +78,7 @@ docker run -it --rm -p 8888:8888 -v ${PWD}:/home/jovyan -w /home/jovyan jupyter-
 ## Publishing image
 
 ```
-docker login && docker tag jupyter-climate woodwardsh/jupyter-climate-earth && docker push woodwardsh/jupyter-climate-earth
+docker login && docker tag jupyter-climate-earth woodwardsh/jupyter-climate-earth && docker push woodwardsh/jupyter-climate-earth
 ```
 
 
